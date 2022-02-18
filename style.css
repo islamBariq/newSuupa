@@ -152,8 +152,10 @@ footer img {
   z-index: 999;
 }
 
-.signIn {
+.signIn,
+.signUp {
   width: 374px;
+  padding: 10px;
   margin-top: 40px;
   height: 620px;
   background: linear-gradient(161.02deg, rgba(46, 46, 60, 0.4) 5.04%, rgba(46, 46, 60, 0.1) 94.8%);
@@ -165,37 +167,45 @@ footer img {
   padding-top: 20px;
   border-radius: 30px;
 }
-.signIn .logo {
+.signIn .logo,
+.signUp .logo {
   margin-bottom: 20px;
 }
-.signIn .logo img {
+.signIn .logo img,
+.signUp .logo img {
   width: 198px;
   height: 135px;
 }
-.signIn h3 {
+.signIn h3,
+.signUp h3 {
   color: white;
   font-family: Dubai;
   margin-top: 10px;
 }
-.signIn h4 {
+.signIn h4,
+.signUp h4 {
   color: #A4A4C0;
   font-family: Dubai;
   font-style: normal;
   font-weight: normal;
 }
-.signIn input {
+.signIn input,
+.signUp input {
   background: #323341;
   border: 1px solid #4C4E62;
   box-sizing: border-box;
   border-radius: 14px;
 }
-.signIn input:focus {
+.signIn input:focus,
+.signUp input:focus {
   background: #323341;
 }
-.signIn label {
+.signIn label,
+.signUp label {
   color: #A4A4C0 !important;
 }
-.signIn .submit {
+.signIn .submit,
+.signUp .submit {
   width: 100%;
   height: calc(3.5rem + 2px);
   border-radius: 14px;
@@ -212,7 +222,8 @@ footer img {
   background: #009FD1;
   border: none;
 }
-.signIn .forgotPassword {
+.signIn .forgotPassword,
+.signUp .forgotPassword {
   width: 100%;
   display: flex;
   align-items: center;
@@ -224,21 +235,31 @@ footer img {
   margin-bottom: 10px;
 }
 .signIn .forgotPassword:hover,
-.signIn .toggleSignUpPage:hover {
+.signIn .toggleSignUpPage:hover,
+.signUp .forgotPassword:hover,
+.signUp .toggleSignUpPage:hover {
   color: #d454f5;
 }
-.signIn .submit:hover {
+.signIn .submit:hover,
+.signUp .submit:hover {
   background-color: #29b2dd;
 }
-.signIn .signInWith img {
+.signIn .signInWith,
+.signUp .signInWith {
+  margin-bottom: 12px;
+}
+.signIn .signInWith img,
+.signUp .signInWith img {
   height: 49px;
 }
-.signIn .toggleSignUpPage {
+.signIn .toggleSignUpPage,
+.signUp .toggleSignUpPage {
   background: none;
   border: none;
   color: #CB00FF;
 }
-.signIn span {
+.signIn span,
+.signUp span {
   color: #A4A4C0 !important;
 }
 

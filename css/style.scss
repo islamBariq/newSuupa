@@ -3,7 +3,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #101014;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -193,8 +193,8 @@ footer {
 
 
 // start Registeration page 
-.po-30 {
-    position: absolute;
+.poFixed {
+    position: fixed;
     bottom: 5%;
 }
 
@@ -202,7 +202,8 @@ footer {
     z-index: 999;
 }
 
-.signIn {
+.signIn,
+.signUp {
     width: 374px;
     margin-top: 40px;
     height: 620px;
@@ -293,12 +294,15 @@ footer {
     }
 
     .signInWith {
+        margin-bottom: 12px;
+
         img {
             height: 49px
         }
     }
 
-    .toggleSignUpPage {
+    .toggleSignUpPage,
+    .toggleSignInPage {
         background: none;
         border: none;
         color: #CB00FF;
@@ -312,7 +316,9 @@ footer {
 
 
 @media(max-width:600px) {
-    .signIn {
+
+    .signIn,
+    .signUp {
         h4 {
             font-size: 14px;
 
@@ -320,6 +326,14 @@ footer {
     }
 
 
+}
+
+.signUp {
+    height: 750px;
+
+    .signInWith {
+        margin-top: 15px;
+    }
 }
 
 /* Chrome, Safari, Edge, Opera */

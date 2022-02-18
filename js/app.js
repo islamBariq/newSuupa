@@ -1,6 +1,5 @@
 var pageIndex = 1;
 $(function () {
-    console.log('test');
     setTimeout(() => {
         $('.loading').parents('.container').addClass('hide');
         $('.loading').parents('.container').removeClass('minHeight-500');
@@ -83,4 +82,18 @@ $('.prevIntro').on('click', function () {
         $('.third__header').removeClass('hide');
 
     }
+});
+
+$('.toggleSignInPage').on('click', function () {
+
+    $('.page').addClass('hide');
+    $('#signInPage').removeClass('hide');
+    debugger;
+
+});
+$('.toggleSignUpPage').on('click', function () {
+
+    $('.page').addClass('hide');
+    $('#signUpPage').removeClass('hide');
+
 });
