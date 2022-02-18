@@ -143,8 +143,8 @@ footer img {
     font-size: 12px;
   }
 }
-.poFixed {
-  position: fixed;
+.fixPosition {
+  position: absolute;
   bottom: 5%;
 }
 

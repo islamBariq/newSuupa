@@ -88,6 +88,8 @@ $('.toggleSignInPage').on('click', function () {
 
     $('.page').addClass('hide');
     $('#signInPage').removeClass('hide');
+    $('footer').css('bottom', '5%');
+
     debugger;
 
 });
@@ -95,5 +97,5 @@ $('.toggleSignUpPage').on('click', function () {
 
     $('.page').addClass('hide');
     $('#signUpPage').removeClass('hide');
-
+    $('footer').css('bottom', '0%');
 });
