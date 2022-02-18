@@ -190,3 +190,149 @@ footer {
 }
 
 // end home page content style 
+
+
+// start Registeration page 
+.po-30 {
+    position: absolute;
+    bottom: 2%;
+}
+
+.page {
+    z-index: 999;
+}
+
+.signIn {
+    width: 374px;
+    margin-top: 27px;
+    height: 620px;
+    background: linear-gradient(161.02deg, rgba(46, 46, 60, 0.4) 5.04%, rgba(46, 46, 60, 0.1) 94.8%);
+    border: 1px solid #4C4E62;
+    box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(18px);
+    padding-top: 20px;
+    border-radius: 30px;
+
+    .logo {
+        margin-bottom: 20px;
+
+        img {
+            width: 198px;
+            height: 135px
+        }
+    }
+
+    h3 {
+        color: white;
+        font-family: Dubai;
+        margin-top: 10px;
+    }
+
+    h4 {
+        color: #A4A4C0;
+        font-family: Dubai;
+        font-style: normal;
+        font-weight: normal;
+
+    }
+
+    input {
+        background: #323341;
+        border: 1px solid #4C4E62;
+        box-sizing: border-box;
+        border-radius: 14px;
+    }
+
+    input:focus {
+        background: #323341;
+    }
+
+    label {
+        color: #A4A4C0 !important
+    }
+
+    .submit {
+        width: 100%;
+        height: calc(3.5rem + 2px);
+        border-radius: 14px;
+        font-family: Dubai;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background: #009FD1;
+        border: none;
+    }
+
+    .forgotPassword {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #CB00FF;
+        background: none;
+        border: none;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .forgotPassword:hover,
+    .toggleSignUpPage:hover {
+        color: #d454f5
+    }
+
+    .submit:hover {
+        background-color: #29b2dd;
+    }
+
+    .signInWith {
+        img {
+            height: 49px
+        }
+    }
+
+    .toggleSignUpPage {
+        background: none;
+        border: none;
+        color: #CB00FF;
+
+    }
+
+    span {
+        color: #A4A4C0 !important
+    }
+}
+
+
+@media(max-width:600px) {
+    .signIn {
+        h4 {
+            font-size: 14px;
+
+        }
+    }
+
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+
+// end Registeration page 
