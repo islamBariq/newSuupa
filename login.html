@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/all.min.js"></script>
+
+    <title>Registration</title>
+</head>
+
+<body data-barba="wrapper">
+    <ul class="transition">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <main data-barba="container" data-barba-namespace="login">
+
+        <div class="container-fluid">
+
+
+            <div class="row align-items-center justify-content-center">
+                <div class="page signIn  " id="signInPage">
+                    <div class="logo d-flex align-items-center justify-content-center flex-column">
+                        <img src="./assets/images/SuupaGraphic.svg" alt="">
+                        <h3>LOGIN</h3>
+                        <h4>Login to your account</h4>
+                    </div>
+                    <form id="signInForm">
+                        <div class="form-floating mb-3">
+                            <input type="number" class="form-control" id="mobileNumber" name="mobileNumber"
+                                placeholder="Mobile Number">
+                            <label for="mobileNumber"> <i class="fa-solid fa-mobile-screen-button"></i> Mobile Number
+                            </label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password" class="form-control" id="LoginPassword" name="password"
+                                placeholder="Password">
+                            <label for="LoginPassword"><i class="fa-solid fa-unlock-keyhole"></i> Password</label>
+                        </div>
+                        <button type="submit" class="submit"> LOGIN</button>
+                        <!-- <button class="forgotPassword" type="button" id="forgotPassword">Forgot Password ?</button> -->
+                        <a href="./forgotPassword.html" class="forgotPassword">Forgot Password ?</a>
+                        <div class="signInWith d-flex align-items-center justify-content-evenly">
+                            <a href="" id="SignInWithGoogle">
+                                <img src="./assets//images/google.svg" alt="google">
+
+                            </a>
+                            <a href="" id="SignInWithFacebook">
+                                <img src="./assets//images/facebook.svg" alt="facebook">
+
+                            </a>
+
+                        </div>
+
+                        <div class="d-flex justify-content-around mt-2">
+                            <!-- <span>Don't have an account? <button type="button" class="toggleSignUpPage">Sign
+                                    Up</button></span> -->
+                            <span>Don't have an account? <a href="./signup.html" class="toggleSignUpPage">Sign
+                                    Up</a></span>
+
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+    <footer class="fixPosition">
+        <img src="./assets/images/colors.svg" alt="">
+    </footer>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.js"></script>
+    <!-- <script src="https://unpkg.com/@barba/core"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.js"
+        integrity="sha512-0ef2yoaxNyILKPwYRFuBqNmwrkQJXSGISPxqnRYy7p9fyeYsfTGR7osp14EdQfu9mEWpTRz6h2o1aG6TH1/mbQ=="
+        crossorigin="anonymous"></script> -->
+    <script src="./js/barba.js"></script>
+    <script src="./js/gsap.js"></script>
+    <script src="./js/transition.js"></script>
+    <script src="./js/app.js"></script>
+
+</body>
+
+
+</html>

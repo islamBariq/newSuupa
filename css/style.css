@@ -47,6 +47,7 @@ body {
 
 footer {
   position: absolute;
+  z-index: -1;
   bottom: 0;
   width: 100%;
   height: 100px;
@@ -152,11 +153,12 @@ footer img {
   z-index: 999;
 }
 
-.signIn,
-.signUp {
+.blurBackground, .signIn,
+.signUp,
+.verification,
+.forgotPasswordPage,
+.resetPasswordPage {
   width: 374px;
-  margin-top: 40px;
-  height: 620px;
   background: linear-gradient(161.02deg, rgba(46, 46, 60, 0.4) 5.04%, rgba(46, 46, 60, 0.1) 94.8%);
   border: 1px solid #4C4E62;
   box-sizing: border-box;
@@ -165,46 +167,81 @@ footer img {
   backdrop-filter: blur(18px);
   padding-top: 20px;
   border-radius: 30px;
+  z-index: 8;
+}
+
+.signIn,
+.signUp,
+.verification,
+.forgotPasswordPage,
+.resetPasswordPage {
+  margin-top: 40px;
+  height: 620px;
+  z-index: 8;
 }
 .signIn .logo,
-.signUp .logo {
+.signUp .logo,
+.verification .logo,
+.forgotPasswordPage .logo,
+.resetPasswordPage .logo {
   margin-bottom: 20px;
 }
 .signIn .logo img,
-.signUp .logo img {
+.signUp .logo img,
+.verification .logo img,
+.forgotPasswordPage .logo img,
+.resetPasswordPage .logo img {
   width: 198px;
   height: 135px;
 }
 .signIn h3,
-.signUp h3 {
+.signUp h3,
+.verification h3,
+.forgotPasswordPage h3,
+.resetPasswordPage h3 {
   color: white;
   font-family: Dubai;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .signIn h4,
-.signUp h4 {
+.signUp h4,
+.verification h4,
+.forgotPasswordPage h4,
+.resetPasswordPage h4 {
   color: #A4A4C0;
   font-family: Dubai;
   font-style: normal;
   font-weight: normal;
 }
 .signIn input,
-.signUp input {
+.signUp input,
+.verification input,
+.forgotPasswordPage input,
+.resetPasswordPage input {
   background: #323341;
   border: 1px solid #4C4E62;
   box-sizing: border-box;
   border-radius: 14px;
 }
 .signIn input:focus,
-.signUp input:focus {
+.signUp input:focus,
+.verification input:focus,
+.forgotPasswordPage input:focus,
+.resetPasswordPage input:focus {
   background: #323341;
 }
 .signIn label,
-.signUp label {
+.signUp label,
+.verification label,
+.forgotPasswordPage label,
+.resetPasswordPage label {
   color: #A4A4C0 !important;
 }
 .signIn .submit,
-.signUp .submit {
+.signUp .submit,
+.verification .submit,
+.forgotPasswordPage .submit,
+.resetPasswordPage .submit {
   width: 100%;
   height: calc(3.5rem + 2px);
   border-radius: 14px;
@@ -222,7 +259,10 @@ footer img {
   border: none;
 }
 .signIn .forgotPassword,
-.signUp .forgotPassword {
+.signUp .forgotPassword,
+.verification .forgotPassword,
+.forgotPasswordPage .forgotPassword,
+.resetPasswordPage .forgotPassword {
   width: 100%;
   display: flex;
   align-items: center;
@@ -236,37 +276,64 @@ footer img {
 .signIn .forgotPassword:hover,
 .signIn .toggleSignUpPage:hover,
 .signUp .forgotPassword:hover,
-.signUp .toggleSignUpPage:hover {
+.signUp .toggleSignUpPage:hover,
+.verification .forgotPassword:hover,
+.verification .toggleSignUpPage:hover,
+.forgotPasswordPage .forgotPassword:hover,
+.forgotPasswordPage .toggleSignUpPage:hover,
+.resetPasswordPage .forgotPassword:hover,
+.resetPasswordPage .toggleSignUpPage:hover {
   color: #d454f5;
 }
 .signIn .submit:hover,
-.signUp .submit:hover {
+.signUp .submit:hover,
+.verification .submit:hover,
+.forgotPasswordPage .submit:hover,
+.resetPasswordPage .submit:hover {
   background-color: #29b2dd;
 }
 .signIn .signInWith,
-.signUp .signInWith {
+.signUp .signInWith,
+.verification .signInWith,
+.forgotPasswordPage .signInWith,
+.resetPasswordPage .signInWith {
   margin-bottom: 12px;
 }
 .signIn .signInWith img,
-.signUp .signInWith img {
+.signUp .signInWith img,
+.verification .signInWith img,
+.forgotPasswordPage .signInWith img,
+.resetPasswordPage .signInWith img {
   height: 49px;
 }
 .signIn .toggleSignUpPage,
 .signIn .toggleSignInPage,
 .signUp .toggleSignUpPage,
-.signUp .toggleSignInPage {
+.signUp .toggleSignInPage,
+.verification .toggleSignUpPage,
+.verification .toggleSignInPage,
+.forgotPasswordPage .toggleSignUpPage,
+.forgotPasswordPage .toggleSignInPage,
+.resetPasswordPage .toggleSignUpPage,
+.resetPasswordPage .toggleSignInPage {
   background: none;
   border: none;
   color: #CB00FF;
 }
 .signIn span,
-.signUp span {
+.signUp span,
+.verification span,
+.forgotPasswordPage span,
+.resetPasswordPage span {
   color: #A4A4C0 !important;
 }
 
 @media (max-width: 600px) {
   .signIn h4,
-.signUp h4 {
+.signUp h4,
+.verification h4,
+.forgotPasswordPage h4,
+.resetPasswordPage h4 {
     font-size: 14px;
   }
 }
@@ -275,6 +342,44 @@ footer img {
 }
 .signUp .signInWith {
   margin-top: 15px;
+}
+
+.verification {
+  height: 451px;
+}
+.verification .line {
+  width: 20px;
+  height: 3px;
+  position: absolute;
+  top: 39px;
+  left: 15px;
+}
+.verification .form-group {
+  position: relative;
+}
+.verification input {
+  width: 50px;
+  height: 50px;
+  background: #323341;
+  border: 1px solid #4C4E62;
+  box-sizing: border-box;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+}
+.verification .numbers {
+  margin-bottom: 15px;
+}
+
+.forgotPasswordPage {
+  height: 430px;
+}
+.forgotPasswordPage h4 {
+  font-size: 15px;
+}
+
+.resetPasswordPage {
+  height: 510px;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -287,6 +392,33 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul.transition {
+  display: flex;
+  position: absolute;
+  z-index: 10;
+  height: 120vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  margin: 0;
+  pointer-events: none;
+  list-style: none;
+}
+ul.transition li:nth-child(odd) {
+  transform: scaleY(0);
+  background: #41E2FF;
+  width: 20%;
+}
+ul.transition li:nth-child(even) {
+  transform: scaleY(0);
+  background: #F16333;
+  width: 20%;
 }
 
 /*# sourceMappingURL=style.css.map */
