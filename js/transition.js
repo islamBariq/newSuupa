@@ -52,5 +52,5 @@ barba.init({
     }]
 });
 barba.hooks.beforeEnter((data) => {
-    $('body').append('<script src="./js/app.js"></script>');
+    $('.mainScript').html('<script src="./js/app.js"></script>');
 });
