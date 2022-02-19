@@ -411,14 +411,9 @@ ul.transition {
   pointer-events: none;
   list-style: none;
 }
-ul.transition li:nth-child(odd) {
+ul.transition li {
   transform: scaleY(0);
-  background: #41E2FF;
-  width: 20%;
-}
-ul.transition li:nth-child(even) {
-  transform: scaleY(0);
-  background: #F16333;
+  background: #1a1c1d;
   width: 20%;
 }
 

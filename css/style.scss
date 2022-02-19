@@ -431,16 +431,12 @@ ul.transition {
     list-style: none;
 
 
-    li:nth-child(odd) {
+    li {
         transform: scaleY(0);
-        background: #41E2FF;
+        background: #1a1c1d;
         width: 20%;
     }
 
-    li:nth-child(even) {
-        transform: scaleY(0);
-        background: #F16333;
-        width: 20%;
-    }
+
 
 }

@@ -12,8 +12,8 @@ function pageTransition() {
 
 function contentAnimation() {
 
-    var tl = gsap.timeline();
-    tl.from('.row', { duration: 1.5, translateY: 50, opacity: 0 });
+    // var tl = gsap.timeline();
+    // tl.from('.row', { duration: 1.5, translateY: 50, opacity: 0 });
     // tl.to('.logo', { clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)" }, "-=1.1");
 }
 
